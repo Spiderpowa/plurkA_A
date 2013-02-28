@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="到底是誰在偷偷說?">
+<meta charset="utf-8">
+<title>偷偷說愉愉悅</title>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="STATIC_HOST_URL/style.css" rel="stylesheet">
+<link rel="image_src" href="logo.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+<script src="STATIC_HOST_URL/js.js"></script>
+</head>
+
+<body>
+<div id="debug" class="well"><button type="button" onClick="javascript:$('#debug').hide('fast');" class="close">&times;</button><h3>Debug</h3><h4>請將以下訊息貼到<a href="http://pastebin.com" target="_blank">PASTEBIN</a>後進行回報</h4></div>
+<div id="body">
+<div id="header">
+    <img src="http://i.imgur.com/RJup193.jpg" />
+    <div>邪王真眼！發動！</div>
+</div>
+<h2 id="name"></h2>
+<div id="info" class="alert alert-info"></div>
+<div id="progress_total">
+    總進度：
+    <div class="progress progress-striped active">
+      <div class="bar" style="width: 0%;"></div>
+    </div>
+</div>
+<div id="progress_part">
+    進度：
+    <div class="progress progress-striped active">
+      <div class="bar" style="width: 0%;"></div>
+    </div>
+</div>
+<button id="stop_trace" class="btn btn-danger" disabled="disabled">停止追蹤</button>
+<button id="get_more_plurks" class="btn btn-info" disabled="disabled"></button>
+<div id="plurks" class="well"></div>
+<div id="suspect" class="well"><h2></h2><div></div></div>
+<div id="footer">
+若網頁無回應，請按下重新整理 | <a href="javascript:report()">回報錯誤</a>
+<div id="version"></div>
+Web Design: Spiderpowa
+</div>
+</div>
+</body>
+</html>
